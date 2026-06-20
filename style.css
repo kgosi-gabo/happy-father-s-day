@@ -1,0 +1,203 @@
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family:'Poppins', sans-serif;
+    background:#0f172a;
+    color:white;
+    line-height:1.8;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero {
+    min-height:100vh:
+
+    background:
+    linear-gradient(
+    rgba (0, 0, 0, .65),
+    rgba (0, 0, 0, .65)
+    ),
+    url ("images/hero-dad.jpg");
+
+    background-size:cover;
+    backround-position:center;
+
+    display-flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-title {
+    max-width:900px;
+}
+
+.hero-subtitle {
+    fonr-size:7rem;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:8px;
+}
+
+.hero-subtitle {
+    font-family:'Great Vibes', cursive;
+    font-size:4rem;
+    color:#facc15;
+    margin-bottom:20px;
+}
+
+.hero-text {
+    font-size:1.4rem;
+    color:#e2e8f0;
+}
+
+/* MESSAGE */
+
+.message {
+    width:90%;
+    max-width:1100px;
+    margin:0px auto;
+    padding:60px;
+
+    background:rgba(255, 255, 255, .05);
+    backdrop-filter:blur(12px);
+
+    border-radius:25px;
+
+    border:1px solid rgba(255, 255, 255, .1);
+
+    box-shadow:0 20px rgba (0, 0, 0, .4);
+}
+
+.message h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size:3rem;
+}
+
+.message p {
+    font-size:1.25rem;
+    color:#e2e8f0;
+    margin-bottom: 25px;
+
+}
+
+.signature {
+    text-align: center;
+    font-size:1.4rem !important;
+    color:#facc15;
+}
+
+/* GALLERY */
+
+.gallery h2 {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.gallery h2 {
+    font-size:3rem;
+    margin-bottom: 50px;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.slide-track {
+    display:flex;
+    width:calc(350px * 8);
+    animation:scroll 24s linear infinite;
+}
+
+.slide-track img {
+    width: 320px;
+    height:420px;
+    object-fit:cover;
+    margin:0 15px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0, 0, 0, .4);
+
+    transition: 4s;
+}
+
+.slide-track img:hover {
+    transform:scale(1.05);
+}
+
+@keyframes scroll {
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(calc(-350px * 4));
+    }
+}
+
+/*STATS */
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    font-size:4rem;
+    color:#facc15;
+}
+
+.stat p {
+    font-size: 1.2rem;
+}
+
+/* FOOTER */
+
+footer {
+    background: #020617;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+footer h2 {
+    color: #facc15;
+    margin-bottom: 15px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px) {
+
+    .hero-title {
+        font-size:3.5rem;
+        letter-spacing:2px;
+    }
+
+    .hero-subtitle {
+        font-size:2.5rem;
+
+    }
+
+    .message {
+        padding: 30px;
+    }
+
+    .message h2 {
+        font-size:2rem;
+    }
+
+    .message p{
+        font-size:1.05rem;
+    }
+
+    .gallery h2{
+        font-size:2rem;
+    }
+}

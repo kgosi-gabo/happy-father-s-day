@@ -1,340 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
 body{
-font-family:'Poppins',sans-serif;
+margin:0;
+font-family:Arial, sans-serif;
 
 ```
 background:linear-gradient(
     135deg,
-    #0f172a,
     #1e3a8a,
     #7c3aed,
     #ec4899
 );
 
-background-size:400% 400%;
-animation:gradientMove 15s ease infinite;
-
 color:white;
-line-height:1.8;
-overflow-x:hidden;
 ```
 
 }
-
-@keyframes gradientMove{
-0%{
-background-position:0% 50%;
-}
-
-```
-50%{
-    background-position:100% 50%;
-}
-
-100%{
-    background-position:0% 50%;
-}
-```
-
-}
-
-/* HERO */
 
 .hero{
 min-height:100vh;
 
 ```
-background:
-    linear-gradient(
-        rgba(0,0,0,0.55),
-        rgba(0,0,0,0.55)
-    ),
-    url("images/hero-dad.jpg");
-
-background-size:cover;
-background-position:center;
-
 display:flex;
 justify-content:center;
 align-items:center;
-
 text-align:center;
-padding:20px;
+
+background:
+linear-gradient(
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4)
+),
+url("images/hero-dad.jpg");
+
+background-size:cover;
+background-position:center;
 ```
 
-}
-
-.hero-content{
-max-width:900px;
 }
 
 .hero-title{
-font-size:7rem;
-font-weight:800;
-text-transform:uppercase;
-letter-spacing:8px;
-
-```
-text-shadow:
-    0 0 20px rgba(255,255,255,0.3);
-```
-
+font-size:5rem;
+color:#ffd700;
 }
 
 .hero-subtitle{
-font-family:'Great Vibes',cursive;
-font-size:4rem;
-color:#facc15;
-margin-bottom:20px;
-}
-
-.hero-text{
-font-size:1.4rem;
-color:#e2e8f0;
-}
-
-/* MESSAGE */
-
-.message{
-width:90%;
-max-width:1100px;
-
-```
-margin:80px auto;
-padding:60px;
-
-background:rgba(255,255,255,0.08);
-
-backdrop-filter:blur(18px);
-
-border-radius:30px;
-
-border:1px solid rgba(255,255,255,0.15);
-
-box-shadow:
-    0 20px 60px rgba(0,0,0,0.35);
-```
-
-}
-
-.message h2{
-text-align:center;
-margin-bottom:40px;
 font-size:3rem;
+color:white;
 }
 
-.message p{
-font-size:1.25rem;
-color:#e2e8f0;
-margin-bottom:25px;
-}
-
-.signature{
-text-align:center;
-font-size:1.5rem !important;
-color:#facc15;
-}
-
-/* GALLERY */
-
-.gallery{
-padding:80px 0;
-}
-
-.gallery h2{
-text-align:center;
-font-size:3rem;
-margin-bottom:50px;
-}
-
-.slider{
-overflow:hidden;
-}
-
-.slide-track{
-display:flex;
-width:calc(350px * 8);
-animation:scroll 24s linear infinite;
-}
-
-.slide-track img{
-width:320px;
-height:420px;
-
-```
-object-fit:cover;
-
-margin:0 15px;
-
+.message,
+.card,
+footer{
+background:rgba(255,255,255,0.15);
+padding:30px;
+margin:20px;
 border-radius:20px;
-
-box-shadow:
-    0 10px 30px rgba(0,0,0,0.4);
-
-transition:0.4s;
-```
-
 }
 
-.slide-track img:hover{
-transform:scale(1.05);
-}
-
-@keyframes scroll{
-from{
-transform:translateX(0);
-}
-
-```
-to{
-    transform:translateX(calc(-350px * 4));
-}
-```
-
-}
-
-/* QUALITIES */
-
-.qualities{
-padding:100px 20px;
-}
-
+.message h2,
+.gallery h2,
 .qualities h2{
+color:#ffd700;
 text-align:center;
-font-size:3rem;
-margin-bottom:50px;
 }
 
 .cards{
 display:flex;
-justify-content:center;
-gap:30px;
 flex-wrap:wrap;
+justify-content:center;
+gap:20px;
 }
 
 .card{
-width:300px;
-
-```
-padding:30px;
-
-background:rgba(255,255,255,0.08);
-
-border-radius:25px;
-
-backdrop-filter:blur(12px);
-
-transition:0.4s;
-```
-
+width:250px;
 }
-
-.card:hover{
-transform:translateY(-10px);
-}
-
-.card span{
-font-size:3rem;
-}
-
-.card h3{
-margin:15px 0;
-}
-
-/* QUOTE */
 
 .quote{
-padding:100px 20px;
 text-align:center;
-}
-
-.quote blockquote{
+padding:50px 20px;
 font-size:2rem;
-font-style:italic;
-max-width:900px;
-margin:auto;
+color:#ffd700;
 }
-
-/* STATS */
-
-.stats{
-display:flex;
-justify-content:center;
-gap:60px;
-flex-wrap:wrap;
-
-```
-padding:80px 20px;
-```
-
-}
-
-.stat{
-text-align:center;
-}
-
-.stat h3{
-font-size:4rem;
-color:#facc15;
-}
-
-.stat p{
-font-size:1.2rem;
-}
-
-/* FOOTER */
 
 footer{
-background:rgba(0,0,0,0.35);
-
-```
 text-align:center;
-padding:60px 20px;
-```
-
-}
-
-footer h2{
-color:#facc15;
-margin-bottom:15px;
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-```
-.hero-title{
-    font-size:3.5rem;
-    letter-spacing:2px;
-}
-
-.hero-subtitle{
-    font-size:2.5rem;
-}
-
-.message{
-    padding:30px;
-}
-
-.message h2{
-    font-size:2rem;
-}
-
-.message p{
-    font-size:1.05rem;
-}
-
-.gallery h2{
-    font-size:2rem;
-}
-```
-
 }
